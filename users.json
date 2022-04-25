@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Juan",
+        "lastname": "Vela Lara",
+        "email": "jvela_t0@yopmail.com",
+        "created_at": "2018-06-14"
+    },
+    {
+        "id": 2,
+        "name": "Julio",
+        "lastname": "Ramos Velásquez",
+        "email": "jramos_t0@yopmail.com",
+        "created_at": "2019-05-21"
+    },
+    {
+        "id": 3,
+        "name": "Mario",
+        "lastname": "Ramírez Rodríguez",
+        "email": "mramirez_t0@yopmail.com",
+        "created_at": "2021-07-07"
+    },
+    {
+        "id": 4,
+        "name": "María",
+        "lastname": "Cabrera Artega",
+        "email": "mcabrera_t0@yopmail.com",
+        "created_at": "2021-07-07"
+    },
+    {
+        "id": 5,
+        "name": "Carlos",
+        "lastname": "García Gamarra",
+        "email": "cgarcia_t0@yopmail.com",
+        "created_at": "2021-07-14"
+    }
+]

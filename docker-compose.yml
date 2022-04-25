@@ -1,0 +1,23 @@
+version : "3" 
+services :
+    webserver :
+        build :
+            context : ./docker/php
+            dockerfile : Dockerfile 
+        container_name : php_csv
+        ports : 
+            - 8383:80
+        networks :
+            backend-net :
+                ipv4_address : 11.23.21.19
+        volumes :
+            - .:/var/www/html
+        command : sh /var/www/html/docker/php/init.sh
+
+networks :
+    backend-net :
+        driver : bridge
+        ipam :
+            driver : default
+            config :
+                - subnet : 11.23.21.0/26
