@@ -10,8 +10,9 @@
     <body>
         <h1>Utilidades php</h1>
         <ul>
-            <li>Generar csv</li>
-            <li>Generar zip</li>
+            <li>Generar csv (utils/Csv)</li>
+            <li>Generar zip (utils/Zip)</li>
+            <li>Leer archivo *.txt y generar archivo *.sql (utils/Read_file)</li>
         </ul>
     </body>
 </html>

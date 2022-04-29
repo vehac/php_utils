@@ -2,5 +2,5 @@
 
 require_once __DIR__ . '/../utils/Zip.php';
 
-$csv = new Zip();
-$csv->generate_zip();
+$zip = new Zip();
+$zip->generate_zip();

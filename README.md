@@ -37,7 +37,7 @@ Si se usa Linux, agregar en /etc/hosts de la pc host la siguiente linea:
 - Crear carpeta `files` en la raíz (/) de la aplicación y darle permisos de lectura y escritura
 - En la carpeta `files` se colocarán los csv's generados
 - Al iniciar con docker, en la ruta `docker/php` se encuentra el archivo `init.sh` donde se asigna permisos a la carpeta `files` cuando se levante el contendor
-- Para generar archivos csv's, ingresar al contenedor con php (webserver) y dentro ejecutar el siguiente comando:
+-  Los archivos csv's se están generando a partir del archivo `users.json` que se encuentra en la raíz (/) de la aplicación, para generar el archivo csv, ingresar al contenedor con php (webserver) y dentro ejecutar el siguiente comando:
 ```bash
 php public/generate_csv.php
 ```
@@ -57,3 +57,12 @@ if(!$val_cli) {
 ```bash
 http://localhost:8383/public/generate_zip.php
 ```
+#### Leer archivo .txt y generar archivo .sql
+- Crear carpeta `files` en la raíz (/) de la aplicación y darle permisos de lectura y escritura
+- En la carpeta `files` se colocarán los sql's generados
+- Al iniciar con docker, en la ruta `docker/php` se encuentra el archivo `init.sh` donde se asigna permisos a la carpeta `files` cuando se levante el contendor
+- Los archivos sql's se están generando a partir del archivo `read_data.txt` que se encuentra en la raíz (/) de la aplicación, para generar el archivo sql ingresar al contenedor con php (webserver) y dentro ejecutar el siguiente comando:
+```bash
+php public/read_file.php
+```
+- Si se quiere generar el sql desde el navegador ingresar a la url `http://localhost:8383/public/read_file.php`

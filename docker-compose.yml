@@ -4,7 +4,7 @@ services :
         build :
             context : ./docker/php
             dockerfile : Dockerfile 
-        container_name : php_csv
+        container_name : php_utils
         ports : 
             - 8383:80
         networks :
